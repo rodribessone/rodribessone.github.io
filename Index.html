@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Portfolio Rodrigo Bessone</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/17d3a1171c.js" crossorigin="anonymous"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+</head>
+
+<body>
+<!-- Menu Encabezado -->
+<div class="contenedor-header">
+	<header>
+		<div class="logo">
+			<a href="#inicio">Rodrigo</a>
+		</div>
+		<nav id="nav" class="responsive">
+			<ul>
+				<li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+				<li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+				<li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+				<li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+				<li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+			</ul>
+		</nav>
+		<div class="nav-responsive" onclick="mostrarOcultarMenu()">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+	</header>
+</div>
+
+<!-- Seccion Inicio -->
+<section id="inicio" class="inicio">
+	<!-- Acomodar lo del nombre para que quede mejor -->
+	<div class="contenido-banner">
+		<div class="contenedor-img">
+			<!-- Insertar imagen de perfil -->
+			<img src="" alt="">
+		</div>
+		<h1>RODRIGO BESSONE</h1>
+		<h2>ACOUNTANT STUDEN - SELF-TAUGHT DEVELOPER</h2>
+		<!-- agregar el link para el linkedin y hacerlo como si fuera un boton al h3 que dice disponible para trabajar --->
+		<h3>Disponible para trabajar</h3>
+		<div class="redes">
+			<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+			<a href="#"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+			<a href="#"><i class="fa-brands fa-twitter"></i></a>
+		</div>
+	</div>
+</section>
+
+
+<!-- Sección Sobre Mi -->
+<section id="sobremi" class="sobremi">
+	<div class="contenido-seccion">
+		<h2>Sobre Mí</h2>
+		<p><span>Hola, mi nombre es Rodrigo Bessone.</span>
+			Soy un estudiante de contador pero me encanta la tecnologia.
+			Tengo conocimiento sobre programación en vba, html, css y javascript.
+			Siéntase libre de echar un vistazo a mis últimos proyectos en la página de cartera web.</p>
+
+		<div class="fila">
+			<!-- datos personales -->
+			<div class="col">
+				<h3>Datos Personales</h3>
+				<ul>
+					<li>
+						<strong>Cumpleaños</strong>
+						11-10-1996
+					</li>
+					<li>
+						<strong>Telefono</strong>
+						+54 2392 500424
+					</li>
+					<li>
+						<strong>Email</strong>
+						rodrigo-bessone@hotmail.com
+					</li>
+					<li>
+						<strong>Linkedin</strong>
+						https://www.linkedin.com/in/rodrigo-bessone/
+					</li>
+					<li>
+						<strong>Cargo</strong>
+						<span>FREELANCE</span>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- intereses -->
+			<div class="col">
+				<h3>Intereses</h3>
+				<div class="contenedor-intereses">
+					<div class="intereses">
+						<i class="fa-solid fa-computer"></i>
+						<span>PC</span>
+					</div>
+					<div class="intereses">
+						<i class="fa-solid fa-book"></i>
+						<span>LEER</span>
+					</div>
+					<div class="intereses">
+						<i class="fa-solid fa-microscope"></i>
+						<span>INVESTIGAR</span>
+					</div>
+					<div class="intereses">
+						<i class="fa-solid fa-dollar-sign"></i>
+						<span>ECONOMIA</span>
+					</div>
+					<div class="intereses">
+						<i class="fa-solid fa-gamepad"></i>
+						<span>JUEGOS</span>
+					</div>
+					<div class="intereses">
+						<i class="fa-solid fa-headphones"></i>
+						<span>MUSICA</span>
+					</div>
+					<div class="intereses">
+						<i class="fa-solid fa-plane"></i>
+						<span>VIAJAR</span>
+					</div>
+					<div class="intereses">
+						<i class="fa-solid fa-dumbbell"></i>
+						<span>GIMNASIO</span>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<div>
+			<button>
+				Descargar CV <i class="fa-solid fa-download"></i>
+				<span class="overlay"></span>
+			</button>
+			
+		</div>
+	</div>
+</section>
+
+<!-- Seccion Skills -->
+<section id="skills" class="skills">
+	<div class="contenido-seccion">
+		<h2>SKILLS</h2>
+		<div class="fila">
+			<!-- Technical Skills -->
+			<div class="col">
+				<h3>Technical Skills</h3>
+				<div class="contenedor-skills">
+					<div class="skill">
+						<span>Pack Office</span>
+						<div class="nivel">
+							<span>Senior</span>
+						</div>
+					</div>
+
+					<div class="skill">
+						<span>Power BI</span>
+						<div class="nivel">
+							<span>Mid Level</span>
+						</div>
+					</div>
+
+					<div class="skill">
+						<span>HTML</span>
+						<div class="nivel">
+							<span>Senior</span>
+						</div>
+					</div>
+
+					<div class="skill">
+						<span>CSS</span>
+						<div class="nivel">
+							<span>Senior</span>
+						</div>
+					</div>
+
+					<div class="skill">
+						<span>Javascript</span>
+						<div class="nivel">
+							<span>Mid Level</span>
+						</div>
+					</div>
+
+					<div class="skill">
+						<span>Photoshop</span>
+						<div class="nivel">
+							<span>Senior</span>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<!-- Professional Skills -->
+			<div class="col">
+				<h3>Professional Skills</h3>
+				<div class="contenedor-skills">
+					<div class="pskill">
+						<span>Creatividad</span>
+					</div>
+
+					<div class="pskill">
+						<span>Teamwork</span>
+					</div>
+
+					<div class="pskill">
+						<span>Adaptabilidad</span>
+					</div>
+
+					<div class="pskill">
+						<span>Dedicación</span>
+					</div>
+
+					<div class="pskill">
+						<span>Comunicación</span>
+					</div>
+
+					<div class="pskill">
+						<span>Proactivo</span>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- Seccion Curriculum -->
+<section id="curriculum" class="curriculum">
+	<div class="contenido-seccion">
+		<h2>Curriculum</h2>
+		<div class="fila">
+			<div class="col izquierda">
+				<h3>Educación</h3>	
+				<div class="item izq">
+					<h4>Contador Público</h4>
+					<span class="casa">Universidad Siglo XXI</span>
+					<span class="fecha">2022-actualidad</span>
+					<p>cosas a agregar</p>
+					<div class="conectori">
+						<div class="circuloi"></div>
+					</div>
+				</div>
+
+				<div class="item izq">
+					<h4>Contador Público</h4>
+					<span class="casa">Universidad Nacional de la Pampa</span>
+					<span class="fecha">2015-2022</span>
+					<p>cosas a agregar</p>
+					<div class="conectori">
+						<div class="circuloi"></div>
+					</div>
+				</div>			
+
+				<div class="item izq">
+					<h4>Titulo secundario Bachillerato con modalidad en economia y administración</h4>
+					<span class="casa">Instituto America</span>
+					<span class="fecha">2009-2014</span>
+					<p>cosas a agregar</p>
+					<div class="conectori">
+						<div class="circuloi"></div>
+					</div>
+				</div>	
+			</div>
+
+			<div class="col derecha">
+				<h3>Experiencia de trabajo</h3>	
+				<div class="item der">
+					<h4>Administrativo de hacienda</h4>
+					<span class="casa">Sociedad Anonima Carnes Pampeanas S.A.</span>
+					<span class="fecha">2021-2023</span>
+					<p>cosas a agregar</p>
+					<div class="conectord">
+						<div class="circulod"></div>
+					</div>
+				</div>
+
+				<div class="item der">
+					<h4>Pasante administrativo</h4>
+					<span class="casa">Casa de gobierno de la Pampa</span>
+					<span class="fecha">2019-2021</span>
+					<p>cosas a agregar</p>
+					<div class="conectord">
+						<div class="circulod"></div>
+					</div>
+				</div>			
+
+				<div class="item der">
+					<h4>Atención al cliente</h4>
+					<span class="casa">Los Girasoles S.R.L.</span>
+					<span class="fecha">2011-2014</span>
+					<p>cosas a agregar</p>
+					<div class="conectord">
+						<div class="circulod"></div>
+					</div>
+				</div>	
+			</div>
+
+		</div>
+	</div>	
+</section>
+
+<!-- Seccion Portfolio -->
+<section id="portfolio" class="portfolio">
+	<div class="contenido-seccion">
+		<h2>PORTFOLIO</h2>
+		<div class="galeria">
+			<div class="proyecto" onclick="modal()">
+				<img src=viejo.png>
+						<div class="modal-container" id="modal_container">
+							<div class="modal">
+								<h1>Trabajo en constructora</h1>
+								<img src="fondo.png">
+								<p>Trabajo con un amigo para bla bla bla</p>
+							</div>
+						</div>
+				<div class="overlay">
+					<h3>Constructora</h3>
+					<p>Fotografía</p>
+				</div>
+			</div>
+			<div class="proyecto" onclick="modal3()">
+				<img src="https://www.carnes-pampeanas.com/img/area-02.jpg">
+						<div class="modal-container2" id="modal_container2">
+							<div class="modal">
+								<h1>Trabajo en frigorifico</h1>
+								<img src="fondo.png">
+								<p>Trabajo propio para bla bla bla</p>	
+							</div>
+						</div>
+				<div class="overlay">
+					<h3>Frigorifico</h3>
+					<p>Fotografía</p>
+				</div>
+			</div>
+			<div class="proyecto" onclick="modal5()">
+				<img src=fondo.png>
+						<div class="modal-container3" id="modal_container3">
+							<div class="modal">
+								<h1>Trabajo en frigorifico</h1>
+								<img src="fondo.png">
+								<p>Esta pag la hice para blabla bla bla bla</p>	
+							</div>
+						</div>
+				<div class="overlay">
+					<h3>Esta web</h3>
+					<p>Fotografía</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+
+<!-- Seccion Contacto -->
+<section id="contacto" class="contacto">
+	<div class="contenido-seccion">
+		<h2>CONTACTO</h2>
+		<div class="fila">
+			<!-- Formulario -->
+			<div class="col">
+				<input type="text" placeholder="Tú Nombre">
+				<input type="text" placeholder="Número Telefónico">
+				<input type="mail" placeholder="Dirección de Email">
+				<input type="text" placeholder="Tema">
+			</div>
+			<!-- Mensaje -->
+			<div class="col">
+				<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+			</div>
+		</div>
+		<!-- Boton enviar -->
+			<div class="mensaje">
+				<button>
+					Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+					<span class="overlay"></span>
+				</button>
+			</div>		
+	</div>
+</section>
+
+<!-- Seccion Footer -->
+<footer>
+	<a href="#inicio" class="arriba">
+		<i class="fa-solid fa-angles-up"></i>
+	</a>
+	<div class="redes">
+		<a href="https://www.facebook.com/rodribessone96/"><i class="fa-brands fa-facebook-f"></i></a>
+		<a href="#"><i class="fa-brands fa-instagram"></i></a>
+		<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+		<a href="#"><i class="fa-brands fa-twitter"></i></a>
+	</div>
+</footer>
+
+ <script src="script.js"></script>
+</body>
+</html>

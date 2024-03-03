@@ -1,0 +1,763 @@
+/* Configuración básica */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #aaa;
+}
+
+html{
+	/*permite deslizar cuando se hace click en los iconos del menu*/
+	scroll-behavior: smooth;
+}
+
+/* M E N U */
+.contenedor-header{
+	background-color: #222;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.contenedor-header header{
+	max-width: 1100px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+	font-family: 'righteous';
+	font-size: 36px;
+	color: #22d;
+	text-decoration: none;
+}
+.contenedor-header header ul{
+	display: flex;
+	list-style: none;
+}
+.contenedor-header header nav ul li a{
+	text-align: none;
+	color: #fff;
+	margin: 0 15px;
+	padding: 3px;
+	transition: .5s;
+	text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover {
+	color: #55d;
+}
+.nav-responsive{
+	background-color: #55d;
+	color: #fff;
+	padding: 5px 10px;
+	margin: 0 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: none;
+}
+/* FINAL M E N U */
+/* I N I C I O */
+.inicio{
+	background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(30, 35, 38, .2)),
+	url(fondo.png);
+	display: flex;
+	background-size: cover;
+	height: 100vh;
+	color: #fff;
+	align-items: center;
+}
+.inicio .contenido-banner{
+	padding: 20px;
+	background-color: #222;
+	max-width: 350px;
+	margin: auto;
+	text-align: center;
+	border-radius: 40px;
+	animation: aparecer 2s ease-out;
+}
+.inicio .contenido-banner img{
+	margin-top: 40px;
+	broder: 10px solid #55d;
+	display: block;
+	width: 80%;
+	margin: auto;
+	border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+	margin-top: 40px;
+	font-size: 42px;
+	font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+	font-size: 15px;
+	font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	margin: 40px 5px;
+	font-size: 20px;
+	transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+	background-color: #55d;
+}
+/* ANIMACION DE APARECER */
+@keyframes aparecer {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+/* FINAL I N I C I O */
+/* S O B R E   M I */
+.sobremi{
+	background: linear-gradient(to top, #222, #000);
+	color: #fff;
+	padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+	max-width: 1100px;
+	margin: auto;
+}
+.sobremi h2{
+	font-size: 48px;
+	font-family: 'Righteous';
+	text-align: center;
+	padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+	font: 18px;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+	color: #22d;
+	font-weight: bold;
+}
+/* A PARTIR DE ACA SEPARA LOS DATOS PERSONALES DE LOS INTERESES Y LE DA VALORES A LAS LISTAS */
+.sobremi .fila{
+	display: flex;
+}
+.sobremi .fila .col{
+	width: 50%;
+}
+.sobremi .fila .col h3{
+	font-size: 28px;
+	font-family: 'Righteous';
+	margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+	list-style: none;
+}
+.sobremi .fila .col ul li{
+	margin: 12px 0;
+}
+.sobremi .fila .col ul li strong {
+	display: inline-block;
+	color: #22d;
+	width: 120px;
+}
+/* ESTO ES PARA LA PARTE DE CARGO*/
+.sobremi .fila .col ul li span{
+	background-color: #55D;
+	padding: 3px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+/* FORMA PARA LOS BOX DE INTERESES */
+.sobremi .fila .col .contenedor-intereses{
+	display: flex;
+	flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .intereses{
+	width: 100px;
+	height: 100px;
+	background-color: #333;
+	border-radius: 10px;
+	margin: 0 15px 15px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: .3s;
+}
+.sobremi .fila .col .contenedor-intereses .intereses:hover{
+	background-color: #55d;
+}
+.sobremi .fila .col .contenedor-intereses .intereses i{
+	font-size: 30px;
+	margin: 10px;
+}
+/* BOTON DE DESCARGA CV */
+.sobremi button{
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid #fff;
+	width: fit-content;
+	display: block;
+	margin: 20px auto;
+	padding: 10px 22px;
+	font-size: 16px;
+	color: #fff;
+	position: relative;
+	z-index: 10;
+}
+.sobremi button .overlay{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: #22d;
+	z-index: -1;
+	transition: 1s;
+}
+.sobremi button:hover .overlay{
+	width: 100%;
+}
+/* FINAL S O B R E   M I */
+/* S K I L L S */
+.skills{
+	background: linear-gradient(to top, #444, #222) ;
+	color: #fff;
+	padding: 50px 20px;
+}
+.skills .contenido-seccion{
+	max-width: 1100px;
+	margin: auto;
+}
+.skills h2{
+	font-size: 48px;
+	font-family: 'Righteous';
+	text-align: center;
+	padding: 20px 0;
+}
+.skills .fila{
+	display: flex;
+}
+.skills .fila .col{
+	width: 50%;
+	padding: 0 20px;
+}
+.skills .fila .col h3{
+	font-size: 28px;
+	font-family: 'Righteous';
+	margin-bottom: 25px;
+}
+/* FORMA PARA LOS BOX DE SKILLS */
+.skills .fila .col .contenedor-skills{
+	display: flex;
+	flex-wrap: wrap;
+}
+.skills .fila .col .contenedor-skills .skill{
+	font-size: 20px;
+	width: 150px;
+	height: 100px;
+	background-color: #222;
+	border-radius: 10px;
+	margin: 0 15px 15px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: .3s;
+	position: relative;
+}
+/* ANIMACION PARA LOS SKILLS TECNICOS */
+.skills .fila .col .contenedor-skills .skill .nivel{
+	font-size: 20px;
+	width: 150px;
+	height: 100px;
+	background-color: #55d;
+	border-radius: 10px;
+	margin: 0 15px 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 75%;
+	z-index: -1;
+	transition: 0.7s;
+}
+.skills .fila .col .contenedor-skills .skill:hover .nivel{
+	width: 100%;
+	z-index: 2;
+}
+/* ANIMACION PARA LOS SKILLS PROFESIONALES */
+.skills .fila .col .contenedor-skills .pskill{
+	font-size: 20px;
+	width: 150px;
+	height: 100px;
+	background-color: #222;
+	border-radius: 10px;
+	margin: 0 15px 15px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: .3s;
+}
+.skills .fila .col .contenedor-skills .pskill:hover{
+	background-color: #55d;
+}
+/* FINAL S K I L L S */
+/* C U R R I C U L U M */
+.curriculum{
+	background: linear-gradient(to top, #666, #444) ;
+	color: #fff;
+	padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+	max-width: 1100px;
+	margin: auto;
+}
+.curriculum h2{
+	font-size: 48px;
+	font-family: 'Righteous';
+	text-align: center;
+	padding: 20px 0;
+}
+.curriculum .fila{
+	display: flex;
+	justify-content: space-between;
+}
+.curriculum .fila .col{
+	width: 49%;
+	padding: 0 20px;
+}
+.curriculum .fila .col h3{
+	font-size: 28px;
+	font-family: 'Righteous';
+	margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+	border-right: 2px solid #222;
+}
+.curriculum .fila .derecha{
+	border-left: 2px solid #222;
+}
+.curriculum .fila .item{
+	padding: 25px;
+	margin-bottom: 30px;
+	background-color: #444;
+	position: relative;
+}
+.curriculum .fila .item h4{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+	color: #55d;
+	font-size: 22px;
+	font-weight: bold;
+	display: block;
+}
+.curriculum .fila .item .fecha{
+	display: block;
+	color: #55d;
+	margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+	line-height: 24px;
+}
+.curriculum .fila .izq{
+	border-right: 2px solid #55d;
+	margin-right: 20px;
+}
+.curriculum .fila .der{
+	border-left: 2px solid #55d;
+	margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+	height: 2px;
+	background-color: #55d;
+	width: 47px;
+	position: absolute;
+	top: 50%;
+	right: -47px;
+	z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+	display: block;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: #55d;
+	float: right;
+	position: relative;
+	bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+	height: 2px;
+	background-color: #55d;
+	width: 47px;
+	position: absolute;
+	top: 50%;
+	left: -47px;
+	z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+	display: block;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: #55d;
+	float: left;
+	position: relative;
+	bottom: 4px;
+}
+/* FINAL C U R R I C U L U M */
+/* P O R T F O L I O */
+.portfolio{
+	background: linear-gradient(to top, #888, #666) ;
+	color: #fff;
+	padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+	max-width: 1100px;
+	margin: auto;
+}
+.portfolio h2{
+	font-size: 48px;
+	font-family: 'Righteous';
+	text-align: center;
+	padding: 20px 0;
+}
+.portfolio .galeria{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+	position: relative;
+	max-width: 300px;
+	height: content;
+	margin: 10px;
+	cursor: pointer;
+}
+.portfolio .modal-container{
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.5);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	pointer-events: none;
+	top: 5%;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	z-index: 50;
+	transition: 1s;
+}
+.portfolio .modal-container2{
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.5);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	pointer-events: none;
+	top: 5%;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	z-index: 50;
+	transition: 1s;
+}
+.portfolio .modal-container3{
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.5);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	pointer-events: none;
+	top: 5%;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	z-index: 50;
+	transition: 1s;
+}
+.portfolio .show{
+	pointer-events: auto;
+	opacity: 1;
+}
+.portfolio .hide{
+	pointer-events: auto;
+	opacity: 0;
+}
+.portfolio .modal{
+	display: flex-inline;
+	background-color: #888;
+	width: 90%;
+	height: 70%;
+	padding: 0px 0px 0px 50px;
+	border-radius: 5px;
+	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.9);
+	text-align: center;
+	position: fixed;
+	z-index: 50;
+	cursor: default;
+}
+.portfolio .modal h1{
+	font-size: 48px;
+	font-family: 'Righteous';
+	text-align: center;
+	margin-top: 0px;
+}
+.portfolio .modal img{
+	max-height: 300px;
+	max-width: 300px;
+	margin-top: -40px;
+}
+.portfolio .modal p{
+	margin-top: -260px;
+	margin-left: -130px;
+}
+/*REVISAR TAMAÑO DE IMAGENES*/
+.portfolio .galeria .proyecto img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: static;
+	z-index: 10;
+}
+.portfolio .galeria .proyecto .overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: linear-gradient(rgba(50, 100, 200, .6),rgba(50, 100, 200, .6));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: 0.5s;
+	font-size: 18px;
+	letter-spacing: 3px;
+	opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay h3{
+	margin-bottom: 20px;
+	transition: 0.2s;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+	opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+	margin-bottom: 0px;
+}
+/* FINAL P O R T F O L I O */
+/* C O N T A C T O */
+.contacto{
+	background: linear-gradient(to top, rgba(170, 170, 170, .2), rgba(136, 136, 136, 1)),
+	url(https://static.vecteezy.com/system/resources/previews/015/720/541/non_2x/world-map-with-square-dots-effect-illustration-isolated-on-transparent-background-free-png.png);
+	background-repeat: no-repeat;
+	display: flex;
+	background-size: contain;
+	height: 110vh;
+	align-items: center;
+	color: #fff;
+	padding: 50px 0;
+}
+.contacto .contenido-seccion{
+	max-width: 1100px;
+	margin: auto;
+}
+.contacto h2{
+	font-size: 48px;
+	font-family: 'Righteous';
+	text-align: center;
+	padding: 20px 0;
+}
+.contacto .fila{
+	display: flex;
+}
+.contacto .mensaje{
+	display: flex;
+}
+.contacto .col{
+	width: 50%;
+	padding: 10px;
+	position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+	display: block;
+	width: 100%;
+	padding: 18px;
+	border: none;
+	margin-bottom: 20px;
+	background-color: #444;
+	color: #fff;
+	font-size: 25px;
+}
+.contacto button{
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid #111;
+	width: fit-content;
+	display: block;
+	margin: 20px auto;
+	padding: 10px 22px;
+	font-size: 16px;
+	color: #111;
+	position: relative;
+	z-index: 10;
+}
+.contacto button .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #55d;
+	z-index: -1;
+	transition: 1s;
+}
+.contacto button:hover .overlay{
+	width: 100%;
+}
+/* FINAL C O N T A C T O */
+/* F O O T E R */
+footer {
+  background-color: #222;
+  color: #FFF;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}	
+footer .redes{
+	margin-bottom: 20px;
+}
+footer .redes a{
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	margin: 40px 5px;
+	font-size: 20px;
+	transition: .3s;
+}
+footer .arriba{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #55d;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: -25px;
+	border-radius: 50%;
+	line-height: 50px;
+	font-size: 18px;
+}
+/* FINAL F O O T E R */
+/* R E S P O N S I V E */
+@media screen and (max-width:980px){
+	nav{
+		display: none;
+	}
+	.nav-responsive{
+		display: block;
+	}
+	nav.responsive{
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 60px;
+		background-color: #222;
+		width: 165px;
+		height: 213px;
+		margin-right: 10px;
+	}
+	nav.responsive ul{
+		display: block !important;
+		margin-left: -40px
+	}
+	nav.responsive ul li{
+		border-bottom: 1px solid #fff;
+		padding: 10px 0px;
+	}
+	.contacto{
+		height: 130vh;
+	}
+}
+@media screen and (max-width:700px){
+	.sobremi .fila{
+		display: block;
+	}
+	.sobremi .fila .col{
+		width: fit-content;
+	}
+
+	.skills .fila{
+		display: block;
+	}
+	.skills .fila .col{
+		width: 100%;
+	}
+
+	.curriculum	.fila{
+		display: block;
+	}
+	.curriculum .fila .col{
+		width: 90%;
+	}
+	.curriculum .fila .derecha{
+		margin-left: 20px;
+	}
+
+	.portfolio .galeria{
+		display: block;
+		width: 100%;
+	}
+	.portfolio .galeria .proyecto{
+		max-width: 100%;
+	}
+	.portfolio .galeria .proyecto img{
+		width: 100%;
+	}
+	.contacto{
+		height: 160vh;
+	}
+	.contacto .fila{
+		display: block;
+	}
+	.contacto .fila .col{
+		width: 100%;
+	}
+	.contacto .col input, .contacto .col textarea{
+	padding: 14px;
+	font-size: 14px;
+	}
+}
